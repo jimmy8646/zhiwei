@@ -10,9 +10,7 @@ function add_custom_scripts() {
 
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
-?>
 
-<?php
 /**
  * Register menu
  *
@@ -26,10 +24,7 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
-?>
 
-
-<?php
 /**
  * Register our sidebars and widgetized areas.
  *
@@ -47,4 +42,13 @@ function register_widgets_init() {
 
 }
 add_action( 'widgets_init', 'register_widgets_init' );
+
+/**
+ * change readmore text
+ *
+ */
+function set_more_link() {
+  return '<a class="more-link d-block mt-5"  style ="color:inherit" href="' . get_permalink() . '">閱讀全文»</a>';
+}
+add_filter( 'the_content_more_link', 'set_more_link' );
 ?>

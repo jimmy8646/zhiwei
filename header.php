@@ -11,9 +11,12 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header id="header">
-      <!-- Header content -->
-      <h1><a href="/"><?php bloginfo();?></a></h1>
-      <div><?php bloginfo('description') ?></div>
-      <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'header-menu' ) ); ?>
+    <header id="header" class="py-5">
+      <div class="container">
+        <div class="wrap d-flex align-items-center">
+          <!-- Header content -->
+          <div id="bloginfo"><a href="/"><?php bloginfo();?></a></div>
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'menu menu-01 small' ) ); ?>
+        </div>
+      </div>
     </header>

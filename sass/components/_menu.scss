@@ -1,0 +1,22 @@
+.menu
+{
+    ul
+    {
+        margin: 0;
+        li
+        {
+            display: block;
+        }
+    }
+}
+
+.menu-01{
+  ul{
+    display: flex;
+    li{
+      a{
+        margin: 0px 10px;
+      }
+    }
+  }
+}
