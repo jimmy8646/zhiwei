@@ -1,0 +1,35 @@
+.navigation.pagination
+{
+    margin-top: 80px;
+    padding: 0 10px;
+
+    border-top: 1px solid #e5e5e5;
+    h2
+    {
+        display: none;
+    }
+    .page-numbers
+    {
+        display: inline-block;
+
+        margin-right: 5px;
+        padding: 5px 15px;
+
+        color: inherit;
+    }
+    .page-numbers.current
+    {
+        color: #fff;
+        background: #e5e5e5;
+    }
+}
+
+a.more-link
+{
+    text-decoration: underline;
+}
+
+#breadcrumb
+{
+    opacity: 0.6;
+}

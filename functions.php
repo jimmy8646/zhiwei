@@ -12,6 +12,18 @@ function add_custom_scripts() {
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
 
 /**
+ * thumbails
+ *
+ */
+add_theme_support('post-thumbnails');
+
+function add_custom_sizes()
+{
+    add_image_size('400X250', 400, 250, array( 'center', 'center'));
+}
+add_action('after_setup_theme', 'add_custom_sizes');
+
+/**
  * Register menu
  *
  */

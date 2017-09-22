@@ -3,9 +3,13 @@
     ul
     {
         margin: 0;
+        padding: 0px;
         li
         {
             display: block;
+            a{
+              color: inherit;
+            }
         }
     }
 }

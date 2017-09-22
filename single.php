@@ -9,7 +9,7 @@
     <div class="wrap">
 
       <div id ="content" role="main">
-
+        <?php get_template_part('/template-parts/breadcrumb','yoast' ) ?>
         <!-- Page content -->
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -21,7 +21,7 @@
                 <?php the_title(); ?>
               </a>
             </h1>
-            <div class ="small" style ="opacity:0.6;"><?php echo '發表於 '.get_the_date('Y-m-d')?></div>
+            <div class ="small" style ="opacity:0.6;"><?php echo '發表於  '.get_the_date('Y-m-d')?></div>
           </div>
           <div class="body">
              <?php the_content(); ?>
