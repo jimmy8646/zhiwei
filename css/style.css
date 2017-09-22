@@ -31,6 +31,9 @@ h6 {
     h6 a:hover {
       opacity: 0.8; }
 
+#snippet-box {
+  display: none !important; }
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
