@@ -36,10 +36,11 @@ pre
 
 table
 {
-    min-width: 500px;
     max-width: 100%;
-    overflow-x: scroll;
     @extend .my-4;
+    @include media-breakpoint-up(md) {
+      min-width: 500px;
+    }
 }
 
 table,

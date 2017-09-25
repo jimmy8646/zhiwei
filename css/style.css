@@ -6071,9 +6071,10 @@ pre {
     padding: 15px !important; }
 
 table {
-  min-width: 500px;
-  max-width: 100%;
-  overflow-x: scroll; }
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    table {
+      min-width: 500px; } }
 
 table,
 th,
