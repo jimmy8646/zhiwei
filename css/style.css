@@ -4836,7 +4836,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   margin-right: 1.5rem !important;
   margin-left: 1.5rem !important; }
 
-.my-4 {
+.my-4, table {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important; }
 
@@ -6069,6 +6069,27 @@ pre {
   box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3); }
   pre code {
     padding: 15px !important; }
+
+table {
+  min-width: 500px;
+  max-width: 100%;
+  overflow-x: scroll; }
+
+table,
+th,
+td {
+  border: 1px solid #e5e5e5; }
+
+td,
+th {
+  padding: 10px; }
+
+tr th:first-child,
+tr td:first-child {
+  text-align: center; }
+
+thead {
+  background: rgba(229, 229, 229, 0.2); }
 
 .menu ul {
   margin: 0;
