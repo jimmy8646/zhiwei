@@ -12,6 +12,17 @@
         <?php get_template_part('/template-parts/breadcrumb','yoast' ) ?>
         <!-- Page content -->
 
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-gr-j+37-1y-5z"
+        data-ad-client="ca-pub-3273735728404530"
+        data-ad-slot="9496531245"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article class="py-5">
