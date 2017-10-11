@@ -32,7 +32,11 @@
                 <?php the_title(); ?>
               </a>
             </h1>
-            <div class ="small" style ="opacity:0.6;"><?php echo '發表於  '.get_the_date('Y-m-d')?></div>
+            <div class ="small" style ="opacity:0.6;">
+              <span class="postdate"><?php echo get_the_date('Y-m-d')?><?php echo " | "?></span>
+              <span class="menu d-inline-block text-danger"><?php the_category() ?></span>
+              <span class="tags"><?php echo " | "?><?php the_tags(); ?></span>
+            </div>
           </div>
           <div class="body">
              <?php the_content(); ?>
