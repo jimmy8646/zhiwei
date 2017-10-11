@@ -6108,6 +6108,11 @@ thead {
   .menu-01 ul li a {
     margin: 0px 10px; }
 
+.menu-02 ul > li {
+  padding: 10px 0px; }
+  .menu-02 ul > li a {
+    display: block; }
+
 #bloginfo a {
   color: #000;
   font-size: 20px;
@@ -6160,6 +6165,13 @@ a.more-link {
   content: "\f002";
   font-size: 5px;
   margin: 0px; }
+
+.fa-bars:before {
+  margin: 0px; }
+
+#header-top {
+  border-bottom: 1px solid #fff;
+  background: #f5f5f5; }
 
 #header {
   background: #f5f5f5; }

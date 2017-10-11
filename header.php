@@ -32,13 +32,22 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <div id="header-top" style="display:none;">
+      <div id="rwd-menu" class="container menu-02 p-3">
+        <div class ="d-flex flex-column">
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'menu small' ) ); ?>
+          <?php get_search_form() ?>
+        </div>
+      </div>
+    </div>
     <header id="header" class="py-5">
       <div class="container">
-        <div class="wrap d-flex align-items-center">
+        <div class="wrap d-flex align-items-center justify-content-md-start justify-content-between">
           <!-- Header content -->
           <div id="bloginfo"><a href="/"><?php bloginfo();?></a></div>
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'menu menu-01 small px-5' ) ); ?>
-          <?php get_search_form() ?>
+          <div class="hidden-md-down"><?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'menu menu-01 small px-5' ) ); ?></div>
+          <div class="hidden-md-down"><?php get_search_form() ?></div>
+          <div class="hidden-md-up p-2 card" onclick="toggle('header-top')"><i class="fa fa-bars m-0"></i></div>
         </div>
       </div>
     </header>
