@@ -16,7 +16,7 @@
 
         <article class="py-5">
 
-          <div class="title mb-5 text-center">
+          <div class="title mb-5">
             <h1>
               <a href="<?php the_permalink();?>">
                 <?php the_title(); ?>
