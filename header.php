@@ -38,6 +38,7 @@
           <!-- Header content -->
           <div id="bloginfo"><a href="/"><?php bloginfo();?></a></div>
           <?php wp_nav_menu( array( 'theme_location' => 'header-menu','container_class' => 'menu menu-01 small px-5' ) ); ?>
+          <?php get_search_form() ?>
         </div>
       </div>
     </header>

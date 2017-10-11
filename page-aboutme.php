@@ -24,6 +24,8 @@
             </h1>
           </div>
 
+          <?php get_template_part('/template-parts/perfile','gravatar') ?>
+
           <div class="body">
              <?php the_content(); ?>
           </div>
