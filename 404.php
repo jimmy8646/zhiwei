@@ -17,11 +17,14 @@
         <hr class="mb-5">
 
         <?php
-          $id=1513;
-          //$id=43;
-          $post = get_page($id);
-          $content = apply_filters('the_content', $post->post_content);
-          echo $content;
+          // $id=1513;
+          // //$id=43;
+          // $post = get_page($id);
+          // $content = apply_filters('the_content', $post->post_content);
+          // echo $content;
+          $sharelinkPost = get_post( 43 );
+          var_dump($sharelinkPost);
+
         ?>
       </div>
 

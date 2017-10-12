@@ -27,13 +27,15 @@ function get_gravatar_info($field,$option=false){
       echo $data[$field][$option];
       break;
     case 'urls':
-      foreach ($data[$field] as $key => $value) {
-        echo '<li>
-                <a class="'.'fa'.' '.strtolower($data[$field][$key]['title']).'" href='.$data[$field][$key]['value'].'>
-                 <span class="hidden-xl-down">'.$data[$field][$key]['title'].'</span>
-                </a>
-              </li>';
-      }
+      // foreach ($data[$field] as $key => $value) {
+      //   echo '<li>
+      //           <a class="'.'fa'.' '.strtolower($data[$field][$key]['title']).'" href='.$data[$field][$key]['value'].'>
+      //            <span class="hidden-xl-down">'.$data[$field][$key]['title'].'</span>
+      //           </a>
+      //         </li>';
+      // }
+      echo '<li><a class="fa facebook" href ="https://www.facebook.com/profile.php?id=100002582793570"></a></li>
+            <li><a class="fa github" href ="https://github.com/SkyRoxas"></a></li>';
       break;
     case 'emails':
       foreach ($data[$field] as $key => $value) {
@@ -49,8 +51,6 @@ function get_gravatar_info($field,$option=false){
 }
 
 ?>
-
-
 
 <div class="d-flex flex-wrap no-gutters mb-3">
   <div class="col-md-3 col-12 d-flex justify-content-center">

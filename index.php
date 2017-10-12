@@ -44,7 +44,7 @@
         </article>
 
 
-        <?php if($wp_query->current_post % 4 == 0): ?>
+        <?php if($wp_query->current_post % 3 == 0): ?>
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <ins class="adsbygoogle"
                style="display:block"
