@@ -52,9 +52,9 @@
                data-ad-layout-key="-eo-1t+9g-28-n8"
                data-ad-client="ca-pub-3273735728404530"
                data-ad-slot="4272639040"></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+         <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <?php endif; ?>
 
 

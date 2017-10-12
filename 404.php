@@ -9,7 +9,20 @@
     <div class="wrap">
 
       <div id ="content" role="main">
-        NO DARA
+        <div class="pt-5">
+          <h2 class="mb-3">此頁面不存在 :</h2>
+          <p>可以參考下列網站連結，或回去 <a href="/">文章列表</a> 觀看 : </p>
+        </div>
+
+        <hr class="mb-5">
+
+        <?php
+          $id=1513;
+          //$id=43;
+          $post = get_page($id);
+          $content = apply_filters('the_content', $post->post_content);
+          echo $content;
+        ?>
       </div>
 
       <?php get_sidebar(); ?>
