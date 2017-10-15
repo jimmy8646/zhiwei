@@ -26,9 +26,15 @@
       gtag('config', 'UA-107138136-1');
     </script>
 
+    <title>
+      <?php if(is_single()): ?>
+        <?php the_title();?>
+      <?php else: ?>
+        <?php bloginfo();?>
+      <?php endif; ?>
+    </title>
 
 
-    <title><?php the_title();?></title>
     <?php wp_head(); ?>
   </head>
   <body>

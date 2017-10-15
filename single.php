@@ -14,14 +14,14 @@
 
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="fluid"
-        data-ad-layout-key="-gr-j+37-1y-5z"
-        data-ad-client="ca-pub-3273735728404530"
-        data-ad-slot="9496531245"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-f1-7+1r-60+71"
+             data-ad-client="ca-pub-3273735728404530"
+             data-ad-slot="9496531245"></ins>
+       <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -42,12 +42,23 @@
              <?php the_content(); ?>
           </div>
 
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-format="fluid"
+               data-ad-layout-key="-f1-7+1r-60+71"
+               data-ad-client="ca-pub-3273735728404530"
+               data-ad-slot="9496531245"></ins>
+         <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+
           <?php
             if (comments_open() || get_comments_number()) {
               comments_template();
             }
           ?>
-          
+
         </article>
 
         <?php endwhile; else : ?>
