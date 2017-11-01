@@ -15,14 +15,6 @@
         </div>
 
         <hr class="mb-5">
-
-        <?php
-          $id=1513;
-          //$id=43;
-          $post = get_post($id);
-          echo apply_filters('the_content', $post->post_content);
-
-        ?>
       </div>
 
       <?php get_sidebar(); ?>
